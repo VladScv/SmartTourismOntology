@@ -1,0 +1,1030 @@
+@prefix : <https://github.com/VladScv/SmartTourismOntology> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix smart-tourism: <https://github.com/VladScv/SmartTourismOntology/smart-tourism#> .
+@base <https://github.com/VladScv/SmartTourismOntology> .
+
+<https://github.com/VladScv/SmartTourismOntology> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#subClassOf
+rdfs:subClassOf rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#equivalentClass
+owl:equivalentClass rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/VladScv/SmartTourismOntology#hasAccessTo
+:hasAccessTo rdf:type owl:ObjectProperty ;
+             rdfs:domain :TouristicService ;
+             rdfs:range :TouristicServiceType ,
+                        :TransportType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasAttractionType
+:hasAttractionType rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasType ;
+                   rdfs:domain :Attraction ,
+                               :TouristicService .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasCuisineType
+:hasCuisineType rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasType ;
+                rdfs:domain :Restaurant ,
+                            :TouristicService ;
+                rdfs:range :CuisineType ,
+                           :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasEventType
+:hasEventType rdf:type owl:ObjectProperty ;
+              rdfs:domain :Event ,
+                          :TouristicService ;
+              rdfs:range :EventType ,
+                         :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasHotelType
+:hasHotelType rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasType ;
+              rdfs:domain :Hotel ,
+                          :TouristicService ;
+              rdfs:range :HotelType ,
+                         :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasQuality
+:hasQuality rdf:type owl:ObjectProperty ;
+            rdfs:domain :TouristicService ;
+            rdfs:range :ServiceQuality .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasTransportType
+:hasTransportType rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasType ;
+                  rdfs:domain :TouristicService ,
+                              :Transport ;
+                  rdfs:range :TouristicServiceType ,
+                             :TransportType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :TouristicService ;
+             rdfs:range :City .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#nearTo
+:nearTo rdf:type owl:ObjectProperty ,
+                 owl:SymmetricProperty ;
+        rdfs:domain :TouristicService ;
+        rdfs:range :TouristicService .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://github.com/VladScv/SmartTourismOntology#hasAverageCost
+:hasAverageCost rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TouristicService ,
+                            :Transport ;
+                rdfs:range xsd:float .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasAveragePrice
+:hasAveragePrice rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Restaurant ,
+                             :TouristicService ;
+                 rdfs:range xsd:float .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasCompany
+:hasCompany rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TouristicService ,
+                        :Transport ;
+            rdfs:range xsd:string .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Event ,
+                     :TouristicService ;
+         rdfs:range xsd:dateTime .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasId
+:hasId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :City ,
+                   :TouristicService ;
+       rdfs:range xsd:integer .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasLocation
+:hasLocation rdf:type owl:DatatypeProperty ;
+             rdfs:domain :City ;
+             rdfs:range xsd:string .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :City ,
+                     :TouristicService ;
+         rdfs:range xsd:string .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasNightPrice
+:hasNightPrice rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Hotel ,
+                           :TouristicService ;
+               rdfs:range xsd:float .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TouristicService ;
+           rdfs:range xsd:float .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#hasStars
+:hasStars rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Hotel ,
+                      :TouristicService ;
+          rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://github.com/VladScv/SmartTourismOntology#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:subClassOf :TouristicService ;
+            rdfs:comment "Class that represents places of interest for tourists" ;
+            rdfs:label "Atracció" ,
+                       "Attraction"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#AttractionType
+:AttractionType rdf:type owl:Class ;
+                rdfs:subClassOf :TouristicServiceType ;
+                rdfs:comment "Touristic attraction type" ;
+                rdfs:label "Attracttion Type"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#City
+:City rdf:type owl:Class ;
+      rdfs:comment "Class that represents urban locations where touristic services are located" ;
+      rdfs:label "City"@en ,
+                 "Ciutat"@ca ;
+      owl:equivalentClass "dbo:City" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#CuisineType
+:CuisineType rdf:type owl:Class ;
+             rdfs:subClassOf :TouristicServiceType ;
+             rdfs:comment "Cuisine Type of a Restaurant" ;
+             rdfs:label "Cuisine Type" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#EconomicClassRestaurant
+:EconomicClassRestaurant rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :Restaurant
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasAveragePrice ;
+                                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                           owl:onDatatype xsd:float ;
+                                                                                           owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                                                                  ]
+                                                                                                                )
+                                                                                         ]
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :Restaurant ,
+                                         :TouristicService ,
+                                         [ owl:intersectionOf ( :Restaurant
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :hasAveragePrice ;
+                                                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                       owl:onDatatype xsd:float ;
+                                                                                       owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                                                              ]
+                                                                                                            )
+                                                                                     ]
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasAveragePrice ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:float ;
+                                                                owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ] ;
+                         rdfs:comment "Budget-friendly restaurants with price under 50" ;
+                         rdfs:label "Economic Class Restaurant"@en ,
+                                    "Restaurant Economic"@ca .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#EconomicQuality
+:EconomicQuality rdf:type owl:Class ;
+                 rdfs:subClassOf :ServiceQuality .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :TouristicService ;
+       rdfs:comment "Class that represents temporary activities of interest for tourists" ;
+       rdfs:label "Event"@ca ,
+                  "Event"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#EventType
+:EventType rdf:type owl:Class ;
+           rdfs:subClassOf :TouristicServiceType ;
+           rdfs:comment "Type of a turistic event" ;
+           rdfs:label "Event Type"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#HighQuality
+:HighQuality rdf:type owl:Class ;
+             rdfs:subClassOf :ServiceQuality .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#HighQualityService
+:HighQualityService rdf:type owl:Class ;
+                    owl:equivalentClass :LuxuryHotel ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasRating ;
+                                          owl:minQualifiedCardinality "45"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:float
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasStars ;
+                                          owl:minQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:integer
+                                        ] ;
+                    rdfs:subClassOf :TouristicService ;
+                    rdfs:comment "Classific ation class for those Touristic Services that has a high rating or valorations." ;
+                    rdfs:label "High Quality Service" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Hotel
+:Hotel rdf:type owl:Class ;
+       rdfs:subClassOf :TouristicService ;
+       rdfs:comment "Class that represents accommodation services with star ratings" ;
+       rdfs:label "Hotel"@ca ,
+                  "Hotel"@en ;
+       owl:equivalentClass "dbo:Hotel" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#HotelType
+:HotelType rdf:type owl:Class ;
+           rdfs:subClassOf :TouristicServiceType ;
+           rdfs:comment "Type of Hotel services" ;
+           rdfs:label "Hotel Type"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#LuxuryClassRestaurant
+:LuxuryClassRestaurant rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :Restaurant
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasAveragePrice ;
+                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                         owl:onDatatype xsd:float ;
+                                                                                         owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                                                                ]
+                                                                                                              )
+                                                                                       ]
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :hasRating ;
+                                                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                         owl:onDatatype xsd:float ;
+                                                                                         owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                                                                ]
+                                                                                                              )
+                                                                                       ]
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :Restaurant ,
+                                       :TouristicService ,
+                                       [ owl:intersectionOf ( :Restaurant
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasAveragePrice ;
+                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:float ;
+                                                                                     owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasRating ;
+                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:float ;
+                                                                                     owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasAveragePrice ;
+                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:onDatatype xsd:float ;
+                                                              owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                                     ]
+                                                                                   )
+                                                            ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasRating ;
+                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:onDatatype xsd:float ;
+                                                              owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                                     ]
+                                                                                   )
+                                                            ]
+                                       ] .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#LuxuryHotel
+:LuxuryHotel rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasRating ;
+                                   owl:minQualifiedCardinality "45"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:float
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasStars ;
+                                   owl:minQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:integer
+                                 ] ;
+             rdfs:subClassOf :Hotel .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:subClassOf :TouristicService ;
+            rdfs:comment "Class that represents food establishments for tourists" ;
+            rdfs:label "Restaurant"@ca ,
+                       "Restaurant"@en ;
+            owl:equivalentClass "<https://dbpedia.org/ontology/Restaurant>" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#ServiceQuality
+:ServiceQuality rdf:type owl:Class ;
+                rdfs:label "Service Quality"@en ,
+                           "Type of service quality provided" ,
+                           "Valoració del Servei" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#StandardQuality
+:StandardQuality rdf:type owl:Class ;
+                 rdfs:subClassOf :ServiceQuality .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#TouristicService
+:TouristicService rdf:type owl:Class ;
+                  rdfs:comment "Class that represents all touristic services in a destination" ;
+                  rdfs:label "Servei Turístic"@ca ,
+                             "Touristic Service"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#TouristicServiceType
+:TouristicServiceType rdf:type owl:Class .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf :TouristicService ;
+           rdfs:comment "Class that represents transport services available in a city" ;
+           rdfs:label "Transport"@ca ,
+                      "Transport"@en ;
+           owl:equivalentClass "<https://dbpedia.org/ontology/MeanOfTransportation>" .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#TransportType
+:TransportType rdf:type owl:Class ;
+               rdfs:subClassOf :TouristicServiceType ;
+               rdfs:comment "Class that categorizes types of transport services" ;
+               rdfs:label "Tipus de Transport"@ca ,
+                          "Transport Type"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/VladScv/SmartTourismOntology#AndalusanCuisine
+:AndalusanCuisine rdf:type owl:NamedIndividual ,
+                           :CuisineType ,
+                           :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ,
+                    :TouristicService ;
+           :hasId 4 ;
+           :hasLocation "(41.3874,2.1686)" ;
+           :hasName "Barcelona" ;
+           rdfs:comment "City in Catalonia, Spain" ;
+           rdfs:label "Barcelona"@ca ,
+                      "Barcelona"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#BeachAttraction
+:BeachAttraction rdf:type owl:NamedIndividual ,
+                          :AttractionType ,
+                          :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#BeachHotel
+:BeachHotel rdf:type owl:NamedIndividual ,
+                     :HotelType ,
+                     :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Bus
+:Bus rdf:type owl:NamedIndividual ,
+              :TouristicServiceType ,
+              :TransportType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#BussinessHotel
+:BussinessHotel rdf:type owl:NamedIndividual ,
+                         :HotelType ,
+                         :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#CatedralBarcelona
+:CatedralBarcelona rdf:type owl:NamedIndividual ,
+                            :Attraction ,
+                            :City ,
+                            :TouristicService ;
+                   :hasAttractionType :BeachAttraction ;
+                   :hasType :BeachAttraction ;
+                   :isLocatedIn :Barcelona ;
+                   :hasId 20 ;
+                   :hasName "Catedral Barcelona" ;
+                   :hasRating "3.7"^^xsd:float .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Cultural
+:Cultural rdf:type owl:NamedIndividual ,
+                   :EventType ,
+                   :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#CulturalAttraction
+:CulturalAttraction rdf:type owl:NamedIndividual ,
+                             :AttractionType ,
+                             :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Gastronomic
+:Gastronomic rdf:type owl:NamedIndividual ,
+                      :EventType ,
+                      :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#HotelRoyalBarcelona
+:HotelRoyalBarcelona rdf:type owl:NamedIndividual ,
+                              :City ,
+                              :Hotel ,
+                              :TouristicService ;
+                     :hasHotelType :BeachHotel ;
+                     :hasType :BeachHotel ;
+                     :isLocatedIn :Barcelona ;
+                     :hasId 9 ;
+                     :hasName "Hotel Royal Barcelona" ;
+                     :hasNightPrice "252.0"^^xsd:float ;
+                     :hasRating "4.0"^^xsd:float ;
+                     :hasStars 4 ;
+                     rdfs:comment "4-star hotel located in Barcelona" ;
+                     rdfs:label "Hotel Royal Barcelona"@ca ,
+                                "Hotel Royal Barcelona"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#JapaneseCuisine
+:JapaneseCuisine rdf:type owl:NamedIndividual ,
+                          :CuisineType ,
+                          :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#LuxuryHotel
+:LuxuryHotel rdf:type owl:NamedIndividual ,
+                      :HotelType ,
+                      :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#MediterraneanCuisine
+:MediterraneanCuisine rdf:type owl:NamedIndividual ,
+                               :CuisineType ,
+                               :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#MexicanCuisine
+:MexicanCuisine rdf:type owl:NamedIndividual ,
+                         :CuisineType ,
+                         :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Museum
+:Museum rdf:type owl:NamedIndividual ,
+                 :AttractionType ,
+                 :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Musical
+:Musical rdf:type owl:NamedIndividual ,
+                  :EventType ,
+                  :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Park
+:Park rdf:type owl:NamedIndividual ,
+               :AttractionType ,
+               :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#PublicBikeService
+:PublicBikeService rdf:type owl:NamedIndividual ,
+                            :TouristicServiceType ,
+                            :TransportType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#RestaurantDeliciaBarcelona
+:RestaurantDeliciaBarcelona rdf:type owl:NamedIndividual ,
+                                     :City ,
+                                     :Restaurant ,
+                                     :TouristicService ;
+                            :hasCuisineType :AndalusanCuisine ;
+                            :hasType :AndalusanCuisine ;
+                            :isLocatedIn :Barcelona ;
+                            :hasAveragePrice "65.0"^^xsd:float ;
+                            :hasId 50 ;
+                            :hasName "Restaurant Delicia Barcelona" ;
+                            :hasRating "4.5"^^xsd:float ;
+                            rdfs:label "Restaurant Delicia Barcelona"@ca ,
+                                       "Restaurant Delicia Barcelona"@en .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#RuralHotel
+:RuralHotel rdf:type owl:NamedIndividual ,
+                     :HotelType ,
+                     :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Sports
+:Sports rdf:type owl:NamedIndividual ,
+                 :EventType ,
+                 :TouristicServiceType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#Taxi
+:Taxi rdf:type owl:NamedIndividual ,
+               :TouristicServiceType ,
+               :TransportType .
+
+
+###  https://github.com/VladScv/SmartTourismOntology#TuristicHotel
+:TuristicHotel rdf:type owl:NamedIndividual ,
+                        :HotelType ,
+                        :TouristicServiceType .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+  owl:onProperty :hasRating ;
+  owl:minQualifiedCardinality "45"^^xsd:nonNegativeInteger ;
+  owl:onDataRange xsd:float ;
+  owl:equivalentClass [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasStars ;
+                        owl:minQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:integer
+                      ]
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRating ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :LuxuryClassRestaurant
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRating ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Restaurant
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRating ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :TouristicService
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRating ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasAveragePrice ;
+                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:float ;
+                                         owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                ]
+                                                              )
+                                       ]
+                  ]
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasRating ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasRating ;
+                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:float ;
+                                         owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                ]
+                                                              )
+                                       ]
+                  ]
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :EconomicClassRestaurant
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :Restaurant
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :TouristicService
+] .
+
+
+[ owl:intersectionOf ( :Restaurant
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasAveragePrice ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:onDatatype xsd:float ;
+                                              owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                     ]
+                                                                   )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                    owl:onProperty :hasAveragePrice ;
+                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                         owl:onDatatype xsd:float ;
+                                         owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                ]
+                                                              )
+                                       ]
+                  ]
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Sets de nearTo property for Events and Restaurants" ;
+   rdfs:label "RestaurantsNearToEvent" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocatedIn ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <#c>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Event ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <#s>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocatedIn ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <#s> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <#c>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <#s>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :nearTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "LuxuryHighRatedHotelRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasStars ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <#s>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first <#s> ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first 4 ;
+                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :LuxuryHotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Sets de nearTo property for Events and Hotels" ;
+   rdfs:label "HotelsNearToEvent" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocatedIn ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <#c>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Event ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <#s>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocatedIn ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <#s> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <#c>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <#s>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :nearTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <#h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
