@@ -1,5 +1,12 @@
-About Widoco output
+About SmartTourismOntology
 ===================
+
+An ontoligy practice at UOC University Software Enginering 
+
+We've used WIDOCO to generate documentation. 
+
+===================
+
 The purpose of Widoco is to reuse and integrate existing tools for documentation, plus the set of features listed below:
 * Separation of the sections of your html page so you can write them independently and replace only those needed.
 * Automatic annotation in RDF-a of the html produced.
