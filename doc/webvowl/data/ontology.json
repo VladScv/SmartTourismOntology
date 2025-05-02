@@ -1,0 +1,1064 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "ca", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism" ],
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BussinessHotel",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "BussinessHotel"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TuristicHotel",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "TuristicHotel"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryHotel",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "LuxuryHotel"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RuralHotel",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "RuralHotel"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "BeachHotel"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQuality",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighQuality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportType",
+      "en" : "Transport Type",
+      "ca" : "Tipus de Transport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Taxi",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Taxi"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Bus",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Bus"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/PublicBikeService",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "PublicBikeService"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class that categorizes types of transport services"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "undefined",
+        "value" : "<https://dbpedia.org/ontology/Restaurant>",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "en" : "Restaurant",
+      "ca" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "RestaurantDeliciaBarcelona",
+        "en" : "Restaurant Delicia Barcelona",
+        "ca" : "Restaurant Delicia Barcelona"
+      }
+    } ],
+    "subClasses" : [ "37", "38" ],
+    "comment" : {
+      "undefined" : "Class that represents food establishments for tourists"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighQualityService"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CuisineType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MexicanCuisine",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "MexicanCuisine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/JapaneseCuisine",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "JapaneseCuisine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MediterraneanCuisine",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "MediterraneanCuisine"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "AndalusanCuisine"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "19" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event",
+      "ca" : "Event"
+    },
+    "comment" : {
+      "undefined" : "Class that represents temporary activities of interest for tourists"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "58",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "en" : "Attraction",
+      "undefined" : "Atracció"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "CatedralBarcelona"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class that represents places of interest for tourists"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Gastronomic",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Gastronomic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Sports",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Sports"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Musical",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Musical"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Cultural",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Cultural"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristicService",
+      "en" : "Touristic Service",
+      "ca" : "Servei Turístic"
+    },
+    "subClasses" : [ "40", "36", "42", "46", "1", "28" ],
+    "comment" : {
+      "undefined" : "Class that represents all touristic services in a destination"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/StandardQuality",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StandardQuality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristicServiceType"
+    },
+    "subClasses" : [ "35", "2", "18", "21", "26" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EconomicClassRestaurant",
+      "en" : "Economic Class Restaurant",
+      "ca" : "Restaurant Economic"
+    },
+    "intersection" : [ "36" ],
+    "comment" : {
+      "undefined" : "Budget-friendly restaurants with price under 50"
+    },
+    "attributes" : [ "intersection", "external" ],
+    "id" : "38",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CulturalAttraction",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "CulturalAttraction"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "BeachAttraction"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Park",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Park"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Museum",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "labels" : {
+        "IRI-based" : "Museum"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicQuality",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EconomicQuality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "undefined",
+        "value" : "dbo:City",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City",
+      "ca" : "Ciutat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "comment" : {
+        "undefined" : "City in Catalonia, Spain"
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "en" : "Barcelona",
+        "ca" : "Barcelona"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class that represents urban locations where touristic services are located"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryClassRestaurant"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "37",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceQuality",
+      "en" : "Service Quality",
+      "undefined" : "Valoració del Servei"
+    },
+    "subClasses" : [ "24", "14", "11" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "undefined",
+        "value" : "dbo:Hotel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hotel",
+      "en" : "Hotel",
+      "ca" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona",
+      "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+      "comment" : {
+        "undefined" : "4-star hotel located in Barcelona"
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalBarcelona",
+        "en" : "Hotel Royal Barcelona",
+        "ca" : "Hotel Royal Barcelona"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Class that represents accommodation services with star ratings"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "instances" : 0,
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "undefined",
+        "value" : "<https://dbpedia.org/ontology/MeanOfTransportation>",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Transport",
+      "en" : "Transport",
+      "ca" : "Transport"
+    },
+    "comment" : {
+      "undefined" : "Class that represents transport services available in a city"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasEventType"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "nearTo"
+    },
+    "domain" : "4",
+    "attributes" : [ "symmetric", "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasDate"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasLocation"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "7"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "16",
+    "subproperty" : [ "17" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "12",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "19",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "4",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "minCardinality" : "45",
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "range" : "19",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasAccessTo"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "19",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "4",
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "4",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasTransportType"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "28",
+    "attributes" : [ "external", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "4",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "4",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "36",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "4",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasQuality"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "36",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasAverageCost"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "superproperty" : [ "15" ],
+    "domain" : "16",
+    "subproperty" : [ "54", "43", "55", "56" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasCuisineType"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "36",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasHotelType"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "46",
+    "attributes" : [ "external", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasStars"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasAveragePrice"
+    },
+    "domain" : "36",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasCompany"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasNightPrice"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasId"
+    },
+    "domain" : "48",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType",
+    "baseIri" : "http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasAttractionType"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "42",
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  } ]
+}

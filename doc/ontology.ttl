@@ -1,0 +1,488 @@
+@prefix : <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism#> .
+
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#subClassOf
+rdfs:subClassOf rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#equivalentClass
+owl:equivalentClass rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                               rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> ;
+                                                                                  rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> ;
+                                                                                rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> ;
+                                                                                rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                              rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> ;
+                                                                                    rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> rdf:type owl:ObjectProperty ,
+                                                                                        owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                               rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo> rdf:type owl:ObjectProperty ,
+                                                                                   owl:SymmetricProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                          rdfs:range <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> ;
+                                                                                   rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> ;
+                                                                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> ;
+                                                                           rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> ,
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> ;
+                                                                               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> ,
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> ;
+                                                                                 rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                             rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> ;
+                                                                            rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                              rdfs:comment "Class that represents places of interest for tourists" ;
+                                                                              rdfs:label "Attraction"@en ,
+                                                                                         "Atracció" .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> rdf:type owl:Class ;
+                                                                        rdfs:comment "Class that represents urban locations where touristic services are located" ;
+                                                                        rdfs:label "City"@en ,
+                                                                                   "Ciutat"@ca ;
+                                                                        owl:equivalentClass "dbo:City" .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> rdf:type owl:Class ;
+                                                                                           owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant>
+                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                        owl:onProperty <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> ;
+                                                                                                                                        owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                             owl:onDatatype xsd:float ;
+                                                                                                                                                             owl:withRestrictions ( [ xsd:maxInclusive "50.0"^^xsd:float
+                                                                                                                                                                                    ]
+                                                                                                                                                                                  )
+                                                                                                                                                           ]
+                                                                                                                                      ]
+                                                                                                                                    ) ;
+                                                                                                                 rdf:type owl:Class
+                                                                                                               ] ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> ;
+                                                                                           rdfs:comment "Budget-friendly restaurants with price under 50" ;
+                                                                                           rdfs:label "Economic Class Restaurant"@en ,
+                                                                                                      "Restaurant Economic"@ca .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicQuality> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                         rdfs:comment "Class that represents temporary activities of interest for tourists" ;
+                                                                         rdfs:label "Event"@ca ,
+                                                                                    "Event"@en .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQuality> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService> rdf:type owl:Class ;
+                                                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> ;
+                                                                                                            owl:minQualifiedCardinality "45"^^xsd:nonNegativeInteger ;
+                                                                                                            owl:onDataRange xsd:float
+                                                                                                          ] ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                         rdfs:comment "Class that represents accommodation services with star ratings" ;
+                                                                         rdfs:label "Hotel"@ca ,
+                                                                                    "Hotel"@en ;
+                                                                         owl:equivalentClass "dbo:Hotel" .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant> rdf:type owl:Class ;
+                                                                                         owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant>
+                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> ;
+                                                                                                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                           owl:withRestrictions ( [ xsd:minExclusive "50.0"^^xsd:float
+                                                                                                                                                                                  ]
+                                                                                                                                                                                )
+                                                                                                                                                         ]
+                                                                                                                                    ]
+                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> ;
+                                                                                                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                           owl:withRestrictions ( [ xsd:minInclusive "4.0"^^xsd:float
+                                                                                                                                                                                  ]
+                                                                                                                                                                                )
+                                                                                                                                                         ]
+                                                                                                                                    ]
+                                                                                                                                  ) ;
+                                                                                                               rdf:type owl:Class
+                                                                                                             ] ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                              rdfs:comment "Class that represents food establishments for tourists" ;
+                                                                              rdfs:label "Restaurant"@ca ,
+                                                                                         "Restaurant"@en ;
+                                                                              owl:equivalentClass "<https://dbpedia.org/ontology/Restaurant>" .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> rdf:type owl:Class ;
+                                                                                  rdfs:label "Service Quality"@en ,
+                                                                                             "Type of service quality provided" ,
+                                                                                             "Valoració del Servei" .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/StandardQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/StandardQuality> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> rdf:type owl:Class ;
+                                                                                    rdfs:comment "Class that represents all touristic services in a destination" ;
+                                                                                    rdfs:label "Servei Turístic"@ca ,
+                                                                                               "Touristic Service"@en .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> ;
+                                                                             rdfs:comment "Class that represents transport services available in a city" ;
+                                                                             rdfs:label "Transport"@ca ,
+                                                                                        "Transport"@en ;
+                                                                             owl:equivalentClass "<https://dbpedia.org/ontology/MeanOfTransportation>" .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> ;
+                                                                                 rdfs:comment "Class that categorizes types of transport services" ;
+                                                                                 rdfs:label "Tipus de Transport"@ca ,
+                                                                                            "Transport Type"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> ;
+                                                                             <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> 4 ;
+                                                                             <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation> "(41.3874,2.1686)" ;
+                                                                             <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Barcelona" ;
+                                                                             rdfs:comment "City in Catalonia, Spain" ;
+                                                                             rdfs:label "Barcelona"@ca ,
+                                                                                        "Barcelona"@en .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Bus
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Bus> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BussinessHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BussinessHotel> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> ;
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction> ;
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> ;
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> 20 ;
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Catedral Barcelona" ;
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> "3.7"^^xsd:float .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Cultural
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Cultural> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CulturalAttraction
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CulturalAttraction> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Gastronomic
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Gastronomic> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel> ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> 9 ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Hotel Royal Barcelona" ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice> "252.0"^^xsd:float ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> "4.0"^^xsd:float ;
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars> 4 ;
+                                                                                       rdfs:comment "4-star hotel located in Barcelona" ;
+                                                                                       rdfs:label "Hotel Royal Barcelona"@ca ,
+                                                                                                  "Hotel Royal Barcelona"@en .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/JapaneseCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/JapaneseCuisine> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryHotel> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MediterraneanCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MediterraneanCuisine> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MexicanCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MexicanCuisine> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Museum
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Museum> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Musical
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Musical> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Park
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Park> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/PublicBikeService
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/PublicBikeService> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> rdf:type owl:NamedIndividual ,
+                                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> ;
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine> ;
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> ;
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> "65.0"^^xsd:float ;
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> 50 ;
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Restaurant Delicia Barcelona" ;
+                                                                                              <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> "4.5"^^xsd:float ;
+                                                                                              rdfs:label "Restaurant Delicia Barcelona"@ca ,
+                                                                                                         "Restaurant Delicia Barcelona"@en .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RuralHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RuralHotel> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Sports
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Sports> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Taxi
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Taxi> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+
+
+###  http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TuristicHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TuristicHotel> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

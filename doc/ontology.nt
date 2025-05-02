@@ -1,0 +1,453 @@
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#subClassOf
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#equivalentClass
+<http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAccessTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasEventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasTransportType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/nearTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAverageCost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents places of interest for tourists" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Atracció" .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents urban locations where touristic services are located" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> <http://www.w3.org/2000/01/rdf-schema#label> "Ciutat"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> <http://www.w3.org/2002/07/owl#equivalentClass> "dbo:City" .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#maxInclusive> "50.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Budget-friendly restaurants with price under 50" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Economic Class Restaurant"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicClassRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant Economic"@ca .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EconomicQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents temporary activities of interest for tourists" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "45"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HighQualityService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents accommodation services with star ratings" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> <http://www.w3.org/2002/07/owl#equivalentClass> "dbo:Hotel" .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2001/XMLSchema#minInclusive> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2001/XMLSchema#minExclusive> "50.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryClassRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents food establishments for tourists" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> <http://www.w3.org/2002/07/owl#equivalentClass> "<https://dbpedia.org/ontology/Restaurant>" .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Service Quality"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Type of service quality provided" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Valoració del Servei" .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/StandardQuality
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/StandardQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/StandardQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/ServiceQuality> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents all touristic services in a destination" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> <http://www.w3.org/2000/01/rdf-schema#label> "Servei Turístic"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> <http://www.w3.org/2000/01/rdf-schema#label> "Touristic Service"@en .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicService> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents transport services available in a city" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport"@en .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Transport> <http://www.w3.org/2002/07/owl#equivalentClass> "<https://dbpedia.org/ontology/MeanOfTransportation>" .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TouristicServiceType> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that categorizes types of transport services" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> <http://www.w3.org/2000/01/rdf-schema#label> "Tipus de Transport"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Type"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/City> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasLocation> "(41.3874,2.1686)" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Barcelona" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "City in Catalonia, Spain" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona"@en .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Bus
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BussinessHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BussinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BussinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Attraction> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAttractionType> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachAttraction> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Catedral Barcelona" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CatedralBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> "3.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Cultural
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CulturalAttraction
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CulturalAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CulturalAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Gastronomic
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Gastronomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Gastronomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Hotel> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasHotelType> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/BeachHotel> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Hotel Royal Barcelona" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasNightPrice> "252.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "4-star hotel located in Barcelona" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Barcelona"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Barcelona"@en .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/JapaneseCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/JapaneseCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/JapaneseCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MediterraneanCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MediterraneanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MediterraneanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MexicanCuisine
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MexicanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/MexicanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/CuisineType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Museum
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Musical
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Park
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AttractionType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/PublicBikeService
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/PublicBikeService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/PublicBikeService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Restaurant> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasCuisineType> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/AndalusanCuisine> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/isLocatedIn> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Barcelona> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasAveragePrice> "65.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasId> "50"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasName> "Restaurant Delicia Barcelona" .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant Delicia Barcelona"@ca .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RestaurantDeliciaBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant Delicia Barcelona"@en .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RuralHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Sports
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/EventType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Taxi
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TransportType> .
+# 
+# http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TuristicHotel
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TuristicHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/TuristicHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/scvri/ontologies/2025/4/smart-tourism/HotelType> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
